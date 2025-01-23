@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Londrina+Outline&family=Londrina+Sketch&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+h1{
+  font-size: 4rem;
+}
+
+
+
