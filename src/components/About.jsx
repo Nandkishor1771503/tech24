@@ -39,7 +39,7 @@ function About() {
           </p>
           <IoCodeSlashOutline
             style={{ fontSize: "16rem" }}
-            className="w-[40%] ml-[35%] md:ml-0"
+            className="w-[40%] ml-[40%] md:ml-0"
           />
         </div>
         {/* <div className="word w-[50%] m-auto flex overflow-hidden text-center">
