@@ -38,7 +38,7 @@ function Services() {
             <span className="font-londrina shadow-xl p-3">01.</span>
             <h2 className="font-londrina font-medium shadow-xl p-3">Custom design</h2>
           </div>
-          <h2 className="lg:text-3xl lg:mt-6 text-xl lg:leading-[3.2rem]">
+          <h2 className="lg:text-3xl lg:mt-6 text-lg lg:leading-[3.2rem]">
             We value your time and dedication to your brand, which is why we
             offer a set of revisions to ensure your website design aligns
             perfectly with your needs and satisfaction. This allows our clients
