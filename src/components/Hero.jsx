@@ -86,7 +86,7 @@ function Hero() {
 
   return (
     <>
-      <div className="hero lg:h-screen h-[85vh] w-full  md:ml-[20%] lg:mx-0">
+      <div className="hero lg:h-screen h-[80vh] w-full  md:ml-[20%] lg:mx-0">
         <div className="topLine w-7 bg-gray-50 rounded-full h-2 mb-[10%]">
           .
         </div>
