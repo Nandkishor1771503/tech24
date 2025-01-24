@@ -103,7 +103,7 @@ function Hero() {
           })}
         </div>
 
-        <div className=" text-gray-400 flex gap-4 font-thin lg:ml-[38%] md:ml-[8%] lg:mt-[3%] mt-[10%] ml-[4%]">
+        <div className=" text-gray-400 flex gap-4 font-thin lg:ml-[38%] md:ml-[8%] lg:mt-[3%] mt-[10%] ml-[15%]">
           {discription.map((disp, i) => {
             return (
               <h2 className="disp md:text-3xl text-xl" key={i}>
@@ -115,7 +115,7 @@ function Hero() {
         <div className="bottomLine w-7 bg-white rounded-full h-2 mt-[8%]">
           .
         </div>
-        <div className="scroll lg:mx-[45%] md:ml-[20%] ml-[20%] lg:mt-7 md:mt-[8%] mt-[29%]  w-[60%] ">
+        <div className="scroll lg:mx-[45%] md:ml-[20%] ml-[25%] lg:mt-7 md:mt-[8%] mt-[29%]  w-[60%] ">
           <h2 className=" text-gray-500 text-3xl">Scroll to know</h2>
           <img src={Scroll} alt="scroll animation" className="ml-5" />
         </div>
