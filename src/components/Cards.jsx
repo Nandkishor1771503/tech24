@@ -132,15 +132,11 @@ function Cards() {
       },
     });
 
-    // gsap.to("element", {
-    //   duration: 2,
-    //   physics2D: { velocity: 300, angle: -60, gravity: 400 },
-    // });
   });
 
   return (
     <>
-      <div className="parent w-[100vw] flex mx-52 flex-col gap-16">
+      <div className="parent w-[100vw] flex lg:ml-52 ml-10  flex-col lg:gap-16">
         {Data &&
           Data.map(({ id, title, para, stars, style }) => {
             return (
@@ -148,20 +144,24 @@ function Cards() {
                 className={`card w-[70%] h-[70vh] sticky  p-5  ${style} rounded-xl`}
                 key={id}
               >
-                <h1>{title}</h1>
-                <div className="mx-16 text-xl mt-24  rounded-xl border border-black p-8 ">
-                  {/* <div>{stars.map((star,i)=>{
-                  return(
-                    <span key={i} >{star}</span>
-                  )
-                })}</div> */}
-
+                <h1 className="text-4xl">{title}</h1>
+                <div className="lg:mx-16 text-xl lg:mt-24 mt-14 rounded-xl border border-black lg:p-8 p-6 ">
                   <div className="flex text-yellow-400">
-                    <span>{stars >= 1 ? <IoStarSharp /> : <RiStarSLine />}</span>
-                    <span>{stars >= 2 ? <IoStarSharp /> : <RiStarSLine />}</span>
-                    <span>{stars >= 3 ? <IoStarSharp /> : <RiStarSLine />}</span>
-                    <span>{stars >= 4 ? <IoStarSharp /> : <RiStarSLine />}</span>
-                    <span>{stars >= 5 ? <IoStarSharp /> : <RiStarSLine />}</span>
+                    <span>
+                      {stars >= 1 ? <IoStarSharp /> : <RiStarSLine />}
+                    </span>
+                    <span>
+                      {stars >= 2 ? <IoStarSharp /> : <RiStarSLine />}
+                    </span>
+                    <span>
+                      {stars >= 3 ? <IoStarSharp /> : <RiStarSLine />}
+                    </span>
+                    <span>
+                      {stars >= 4 ? <IoStarSharp /> : <RiStarSLine />}
+                    </span>
+                    <span>
+                      {stars >= 5 ? <IoStarSharp /> : <RiStarSLine />}
+                    </span>
                   </div>
                   <p>{para}</p>
                 </div>
@@ -169,10 +169,6 @@ function Cards() {
             );
           })}
       </div>
-
-      
-
-      
     </>
   );
 }
