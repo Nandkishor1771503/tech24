@@ -86,7 +86,7 @@ function Hero() {
 
   return (
     <>
-      <div className="hero lg:h-screen h-[100vh] w-full  md:ml-[20%] lg:mx-0">
+      <div className="hero lg:h-screen h-[85vh] w-full  md:ml-[20%] lg:mx-0">
         <div className="topLine w-7 bg-gray-50 rounded-full h-2 mb-[10%]">
           .
         </div>
@@ -103,7 +103,7 @@ function Hero() {
           })}
         </div>
 
-        <div className=" text-gray-400 flex gap-4 font-thin lg:ml-[38%] md:ml-[8%] lg:mt-[3%] mt-[10%] ml-[15%]">
+        <div className=" text-gray-400 flex gap-4 font-thin lg:ml-[38%] md:ml-[8%] lg:mt-[3%] mt-[10%] ml-[14%]">
           {discription.map((disp, i) => {
             return (
               <h2 className="disp md:text-3xl text-xl" key={i}>

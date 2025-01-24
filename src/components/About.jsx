@@ -25,9 +25,9 @@ function About() {
   const Text = "sunnyNK".split("");
   return (
     <>
-      <div className="about lg:h-[80vh] w-full text-orange-500 bg-[#181818] text-start lg:p-7 rounded-xl ml-5 items-center justify-center">
+      <div className="about lg:h-[80vh] w-full text-orange-500 bg-[#181818] text-start lg:p-7 rounded-xl lg:mx-2">
         <h1 className="my-8">About us</h1>
-        <div className="flex md:flex-row  flex-col-reverse gap-5 ">
+        <div className="flex md:flex-row  flex-col-reverse ">
           <p className="lg:text-2xl text-2xl items-center justify-center lg:w-[60%] w-[120%] lg:leading-10 leading-[3rem] ">
             {" "}
             We’re a team of passionate designers, developers, and strategists
@@ -35,11 +35,11 @@ function About() {
             immersive apps, we blend creativity with technology to deliver
             tailored solutions for businesses of all sizes." “Our mission? To
             help brands stand out in a digital-first world with designs that
-            inspire and technology that performs.{" "}
+            inspire and technology that performs.
           </p>
           <IoCodeSlashOutline
             style={{ fontSize: "16rem" }}
-            className="w-[40%] ml-[30%] md:ml-0"
+            className="w-[40%] ml-[24%] md:ml-0"
           />
         </div>
         {/* <div className="word w-[50%] m-auto flex overflow-hidden text-center">
