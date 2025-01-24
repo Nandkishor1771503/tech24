@@ -25,7 +25,7 @@ function About() {
   const Text = "sunnyNK".split("");
   return (
     <>
-      <div className="about lg:h-[80vh] w-full text-orange-500 bg-[#181818] text-start lg:p-7 rounded-xl -ml-4 lg:mx-2">
+      <div className="about lg:h-[80vh] w-full text-orange-500 bg-[#181818] text-start lg:p-7 rounded-xl -ml-6 lg:mx-2">
         <h1 className="my-8">About us</h1>
         <div className="flex md:flex-row  flex-col-reverse ">
           <p className="lg:text-2xl text-2xl items-center justify-center lg:w-[60%] w-[120%] lg:leading-10 leading-[3rem] ">
@@ -39,7 +39,7 @@ function About() {
           </p>
           <IoCodeSlashOutline
             style={{ fontSize: "16rem" }}
-            className="w-[40%] ml-[24%] md:ml-0"
+            className="w-[40%] ml-[35%] md:ml-0"
           />
         </div>
         {/* <div className="word w-[50%] m-auto flex overflow-hidden text-center">
