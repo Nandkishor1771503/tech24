@@ -37,8 +37,8 @@ function Carousel() {
       ScrollTrigger.create({
         trigger: ".pin",
         pin: true, // Pin the entire ".pin" section
-        start: "top 320%",// Pin starts when ".pin" reaches the top of the viewport
-        end: "bottom 350%", // Adjust the scroll duration
+        start: "top 300%",// Pin starts when ".pin" reaches the top of the viewport
+        end: "bottom 250%", // Adjust the scroll duration
         scrub: 2,
         markers: true, // For debugging purposes
       });
