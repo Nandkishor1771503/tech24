@@ -47,7 +47,7 @@ function Carousel() {
       gsap.to(set, {
         xPercent: -125 * set.length, // Move all images horizontally
         scrollTrigger: {
-          trigger: ".pin",
+          trigger: ".container",
           // scroller:"html",
           start: "top 320%", // Trigger starts when the container reaches the viewport
           end: "bottom 330%", // Ensure this matches the ScrollTrigger duration
