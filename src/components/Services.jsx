@@ -52,8 +52,8 @@ function Services() {
         <div className="ani sticky lg:h-[80vh]  flex flex-col gap-10 mt-12 lg:p-16 p-2 pb-14 rounded-2xl bg-[#181818] ">
           <div className="flex lg:gap-2 gap-4 my-2 mx-5 text-5xl">
             {" "}
-            <span className="font-londrina shadow-xl p-3">02.</span>
-            <h2 className="font-londrina font-medium shadow-xl p-3">
+            <span className="font-londrina shadow-xl p-3 pl-0">02.</span>
+            <h2 className="font-londrina   shadow-xl p-3">
               UI/UX design selection
             </h2>
           </div>
@@ -67,10 +67,10 @@ function Services() {
           </h2>
         </div>
         <div className="ani sticky lg:h-[80vh]  flex flex-col gap-10 mt-12 lg:p-16 p-2 pb-14 rounded-2xl bg-[#181818] ">
-          <div className="flex lg:gap-2 gap-4 my-2 mx-5 text-5xl">
+          <div className="flex lg:gap-2 gap-2 my-2 mx-5 text-5xl">
             {" "}
-            <span className="font-londrina shadow-xl p-3">03.</span>
-            <h2 className="font-londrina font-medium shadow-xl p-3">
+            <span className="font-londrina shadow-xl p-3 pl-0 -ml-3">03.</span>
+            <h2 className="font-londrina font-medium shadow-xl p-3 text-wrap">
               Hosting & deployment
             </h2>
           </div>
@@ -82,10 +82,10 @@ function Services() {
           </h2>
         </div>
         <div className="ani sticky lg:h-[80vh]  flex flex-col gap-10 mt-12 lg:p-16 p-2 pb-14 rounded-2xl bg-[#181818] ">
-          <div className="flex lg:gap-2 gap-4 my-2 mx-5 text-5xl">
+          <div className="flex lg:gap-2 gap-1 my-2 mx-5 text-5xl">
             {" "}
-            <span className="font-londrina shadow-xl p-3">04.</span>
-            <h2 className="font-londrina font-medium shadow-xl p-3">
+            <span className="font-londrina shadow-xl p-3 pl-0 -ml-4">04.</span>
+            <h2 className="font-londrina font-medium shadow-xl text-wrap p-3">
               Maintenance and Support
             </h2>
           </div>
