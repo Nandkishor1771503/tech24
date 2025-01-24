@@ -53,7 +53,7 @@ function Carousel() {
 
   return (
     <>
-      <h1 className="text-white ml-8 font-thin">Our work</h1>
+      <h1 className="text-white ml-8 font-thin font-londrina">Our work</h1>
       <div className="pin flex items-center justify-center ">
         {/* <div className="">
           <FaChevronLeft className="text-white text-5xl cursor-pointer  shadow-2xl" />

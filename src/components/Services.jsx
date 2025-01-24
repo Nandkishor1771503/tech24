@@ -31,14 +31,14 @@ function Services() {
 
   return (
     <>
-      <div className="cards2 m-auto lg:my-40 lg:w-[60%] w-[80%] text-orange-500  ">
-        <div className="ani sticky lg:h-[80vh]  flex flex-col gap-10 mt-10 p-16 pb-14 rounded-2xl bg-[#181818] ">
-          <div className="flex gap-2 text-5xl">
+      <div className="cards2 m-auto lg:my-40 lg:w-[60%] w-[90%] text-orange-500  ">
+        <div className="ani sticky lg:h-[80vh]  flex flex-col gap-10 mt-12 lg:p-16 p-2 pb-14 rounded-2xl bg-[#181818] ">
+          <div className="flex lg:gap-2 gap-4 my-2 mx-5 text-5xl">
             {" "}
             <span className="font-londrina shadow-xl p-3">01.</span>
             <h2 className="font-londrina font-medium shadow-xl p-3">Custom design</h2>
           </div>
-          <h2 className="lg:text-3xl mt-6 lg:leading-[3.2rem]">
+          <h2 className="lg:text-3xl lg:mt-6 text-xl lg:leading-[3.2rem]">
             We value your time and dedication to your brand, which is why we
             offer a set of revisions to ensure your website design aligns
             perfectly with your needs and satisfaction. This allows our clients
