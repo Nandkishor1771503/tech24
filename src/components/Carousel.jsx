@@ -60,7 +60,7 @@ function Carousel() {
 
     // })
 
-    mm.add("(max-width:1500px)",()=>{
+    
       // Pinning the container  ( Parent animation  )
     ScrollTrigger.create({
       trigger: ".pin",
@@ -85,7 +85,7 @@ function Carousel() {
     });
     })
 
-  });
+
 
   return (
     <>
