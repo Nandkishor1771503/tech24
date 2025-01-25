@@ -26,7 +26,7 @@ function Cards() {
         scrollTrigger: {
           trigger: ".parent",
           scroller: "body",
-          markers: true,
+          // markers: true,
           start: "top 10%",
           end: "bottom 80%",
           scrub: 2,

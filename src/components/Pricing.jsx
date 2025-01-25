@@ -8,12 +8,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Pricing() {
   useGSAP(() => {
+    const mm = gsap.matchMedia();
 
-    const mm = gsap.matchMedia()
-
-    mm.add("(min-width:1024px)",()=>{
-
-      
+    mm.add("(min-width:1024px)", () => {
       gsap.from(".priceCard", {
         x: -15,
         opacity: 0,
@@ -26,42 +23,27 @@ function Pricing() {
           scrub: 2,
         },
       });
-    })
+    });
 
-    mm.add("(max-width:500px)",()=>{
-
-      
+    mm.add("(max-width:500px)", () => {
       gsap.from(".priceCard", {
         x: -15,
-        opacity: .3,
+        opacity: 0.3,
         stagger: 0.1,
         scrollTrigger: {
           trigger: ".priceCard",
-          markers:true,
+          markers: true,
           start: "top 130%",
           end: "bottom 110%",
           scrub: 2,
         },
       });
-    })
-
+    });
   });
 
   return (
     <>
-      {/* <div className="texts h-screen text-white bg-gray-900 mx-5 rounded-2xl p-16 mt-32">
-        <h1 className="text-7xl">TITLE</h1>
-        <p className="text-wrap flex flex-wrap gap-2 ">
-          {para.map((word, i) => {
-            return (
-              <span className="para text-4xl mt-10 " key={i}>
-                {word}
-              </span>
-            );
-          })}
-        </p>
-      </div> */}
-
+      
       <div className="priceCard flex justify-center lg:flex-row flex-col gap-10 lg:h-[100vh] lg:my-36 my-16">
         <div className=" border border-gray-500 lg:w-[28vw] w-[90%] lg:h-screen h-[80vh] rounded-2xl p-4 ml-5 lg:ml-3 shadow-xl  shadow-gray-600">
           <h2 className=" text-orange-600 text-4xl  text-center">Basic</h2>
@@ -89,7 +71,7 @@ function Pricing() {
 
         <div className="priceCard border border-gray-500 lg:w-[30vw] w-[90%] lg:h-screen rounded-2xl ml-5 z-50 p-4 shadow-xl shadow-gray-600">
           <h2 className=" text-orange-600 text-4xl text-center">Standard</h2>
-          {/* <span className="text-orange-600">₹15,000</span> */}
+          
           <div className="list of services lg:ml-16 ml-5 flex flex-col gap-0">
             <span className="text-orange-500 text-3xl lg:mx-28 mx-20 lg:my-14 my-10 ">
               ₹15,000
@@ -114,7 +96,7 @@ function Pricing() {
 
         <div className="priceCard border border-gray-500 lg:w-[30vw] w-[90%] lg:h-screen rounded-2xl ml-5 p-4 shadow-xl shadow-gray-600">
           <h2 className=" text-orange-600 text-4xl text-center">Premium</h2>
-          {/* <span className="text-orange-600">₹21,000</span> */}
+          
 
           <div className="list of services lg:ml-16 ml-5 flex flex-col gap-0">
             <span className="text-orange-500 text-3xl lg:mx-28 mx-20 lg:my-14 my-10 ">
