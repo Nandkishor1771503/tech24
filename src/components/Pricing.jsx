@@ -8,18 +8,43 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Pricing() {
   useGSAP(() => {
-    gsap.from(".priceCard", {
-      x: -15,
-      opacity: 0,
-      stagger: 0.1,
-      scrollTrigger: {
-        trigger: ".priceCard",
-        // markers:true,
-        start: "top 40%",
-        end: "bottom 98%",
-        scrub: 2,
-      },
-    });
+
+    const mm = gsap.matchMedia()
+
+    mm.add("(min-width:1024px)",()=>{
+
+      
+      gsap.from(".priceCard", {
+        x: -15,
+        opacity: 0,
+        stagger: 0.1,
+        scrollTrigger: {
+          trigger: ".priceCard",
+          // markers:true,
+          start: "top 40%",
+          end: "bottom 98%",
+          scrub: 2,
+        },
+      });
+    })
+
+    mm.add("(max-width:500px)",()=>{
+
+      
+      gsap.from(".priceCard", {
+        x: -15,
+        opacity: .3,
+        stagger: 0.1,
+        scrollTrigger: {
+          trigger: ".priceCard",
+          markers:true,
+          start: "top 160%",
+          end: "bottom 110%",
+          scrub: 2,
+        },
+      });
+    })
+
   });
 
   return (
@@ -37,7 +62,7 @@ function Pricing() {
         </p>
       </div> */}
 
-      <div className="priceCard flex justify-center lg:flex-row flex-col gap-10 lg:h-[100vh] lg:my-36 my-10">
+      <div className="priceCard flex justify-center lg:flex-row flex-col gap-10 lg:h-[100vh] lg:my-36 my-16">
         <div className=" border border-gray-500 lg:w-[28vw] w-[90%] lg:h-screen h-[80vh] rounded-2xl p-4 ml-5 lg:ml-3 shadow-xl  shadow-gray-600">
           <h2 className=" text-orange-600 text-4xl  text-center">Basic</h2>
           <div className="list of services lg:ml-16 ml-5 flex flex-col gap-2">

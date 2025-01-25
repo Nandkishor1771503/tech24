@@ -56,7 +56,7 @@ function SVG() {
   return (
     <>
       <div
-        className=" h-[50vh] flex items-center lg:mx-56 lg:m-5 justify-center content-center"
+        className=" hidden h-[50vh] lg:flex items-center lg:mx-56 lg:m-5 justify-center content-center"
         onMouseMove={Move}
         onMouseLeave={Leave}
         ref={moveRef}
