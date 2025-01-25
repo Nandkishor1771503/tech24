@@ -61,7 +61,7 @@ function Hero() {
       gsap.to(".topLine", {
         width: 20,
         opacity: 0,
-        x: 500,
+        x: 400,
         duration: 2,
       });
 
@@ -70,7 +70,7 @@ function Hero() {
         {
           width: 20,
           opacity: 1,
-          x: 500,
+          x: 400,
         },
         {
           opacity: 0,
