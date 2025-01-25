@@ -29,39 +29,7 @@ function Carousel() {
     const set = gsap.utils.toArray(".container > .myImg");
 
 
-    const mm = gsap.matchMedia()
-
-
-    // mm.add("(max-width:500px)", ()=> {
-
-    //   ScrollTrigger.create({
-    //     trigger: ".pin",
-    //     pin: true, // Pin the entire ".pin" section
-    //     start: "top 300%",// Pin starts when ".pin" reaches the top of the viewport
-    //     end: "bottom 250%", // Adjust the scroll duration
-    //     scrub: 2,
-    //     markers: true, // For debugging purposes
-    //   });
-  
-    //   // Animating individual images        ( Children Animation )
-    //   gsap.to(set, {
-    //     xPercent: -125 * set.length, // Move all images horizontally
-    //     scrollTrigger: {
-    //       trigger: ".container",
-    //       // scroller:"html",
-    //       start: "top 320%", // Trigger starts when the container reaches the viewport
-    //       end: "bottom 330%", // Ensure this matches the ScrollTrigger duration
-    //       scrub: 2,
-    //       markers:true,
-    //       // pin:true
-    //     },
-    //   });
-
-
-    // })
-
-    
-      // Pinning the container  ( Parent animation  )
+    // Pinning the container  ( Parent animation  )
     ScrollTrigger.create({
       trigger: ".pin",
       pin: true, // Pin the entire ".pin" section
@@ -79,23 +47,20 @@ function Carousel() {
         start: "top top", // Trigger starts when the container reaches the viewport
         end: "bottom -100%", // Ensure this matches the ScrollTrigger duration
         scrub: 2,
-        markers:true
+        markers: true,
         // pin:true
       },
     });
-    })
-
-
+  });
 
   return (
     <>
       <h1 className="text-white ml-8 mt-5 font-thin font-londrina">Our work</h1>
-      <div className="pin flex items-center justify-center p-0">
-        
+      <div className="pin w-full flex items-center justify-center lg:gap-0 p-0 overflow-x-hidden ">
         <div
           ref={containerRef}
           onScroll={handleScroll}
-          className="container relative top-0 flex items-center lg:mb-20 overflow-hidden "
+          className="container top-0 flex items-center lg:mb-20 "
         >
           <img src={Img1} alt="" className={imgStyle} />
 
@@ -109,10 +74,8 @@ function Carousel() {
             className={imgStyle}
           />
         </div>
-        
       </div>
-
-      </>
+    </>
   );
 }
 

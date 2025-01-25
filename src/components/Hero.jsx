@@ -61,7 +61,7 @@ function Hero() {
       gsap.to(".topLine", {
         width: 20,
         opacity: 0,
-        x: 400,
+        x: 350,
         duration: 2,
       });
 
@@ -70,7 +70,7 @@ function Hero() {
         {
           width: 20,
           opacity: 1,
-          x: 400,
+          x: 350,
         },
         {
           opacity: 0,
@@ -108,7 +108,7 @@ function Hero() {
 
   return (
     <>
-      <div className="hero lg:h-screen h-[100vh] w-full  md:ml-[20%] lg:mx-0">
+      <div className="hero lg:h-screen h-[100vh] lg:h-:[70vh] w-full  md:ml-[20%] lg:mx-0">
         <div className="topLine w-7 bg-gray-50 rounded-full h-2 mb-[10%]">
           .
         </div>

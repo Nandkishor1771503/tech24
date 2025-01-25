@@ -55,24 +55,22 @@ function SVG() {
 
   return (
     <>
-      
-        <div
-          className=" h-[50vh] flex items-center mx-56 justify-center content-center"
-          onMouseMove={Move}
-          onMouseLeave={Leave}
-          ref={moveRef}
-        >
-          <svg width="1500" height="300" className="svg mx-auto">
-            <path
-              ref={svgpath}
-              d="M 10 80 Q 500 80 2000 80"
-              stroke="white"
-              fill="transparent"
-              strokeWidth="2"
-            />
-          </svg>
-        </div>
-      
+      <div
+        className=" h-[50vh] flex items-center lg:mx-56 lg:m-5 justify-center content-center"
+        onMouseMove={Move}
+        onMouseLeave={Leave}
+        ref={moveRef}
+      >
+        <svg width="1500" height="300" className="svg mx-auto">
+          <path
+            ref={svgpath}
+            d="M 10 80 Q 500 80 2000 80"
+            stroke="white"
+            fill="transparent"
+            strokeWidth="2"
+          />
+        </svg>
+      </div>
     </>
   );
 }
