@@ -38,8 +38,8 @@ function Pricing() {
         scrollTrigger: {
           trigger: ".priceCard",
           markers:true,
-          start: "top 160%",
-          end: "bottom 110%",
+          start: "top 60%",
+          end: "bottom 80%",
           scrub: 2,
         },
       });
