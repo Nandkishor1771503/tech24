@@ -87,7 +87,7 @@ function Pricing() {
           </div>
         </div>
 
-        <div className="priceCard border border-gray-500 lg:w-[30vw] w-[90%] h-screen rounded-2xl ml-5 z-50 p-4 shadow-xl shadow-gray-600">
+        <div className="priceCard border border-gray-500 lg:w-[30vw] w-[90%] lg:h-screen rounded-2xl ml-5 z-50 p-4 shadow-xl shadow-gray-600">
           <h2 className=" text-orange-600 text-4xl text-center">Standard</h2>
           {/* <span className="text-orange-600">₹15,000</span> */}
           <div className="list of services lg:ml-16 ml-5 flex flex-col gap-0">
