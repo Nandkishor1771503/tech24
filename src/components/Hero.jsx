@@ -28,41 +28,61 @@ function Hero() {
   const discription = "Design your digital presence".split(" ");
 
   useGSAP(() => {
-    const tl = gsap.timeline();
+    
 
-    // tl.fromTo(".hero",{
-    //   y:100,
-    //   opacity:0.7,
-    //   scale:.5,
-    //   // duration:2,
-    //   backgroundColor:"#22343d"
-    // },{
-    //   y:0,
-    //   opacity:1,
-    //   scale:1.1,
-    //   duration:1.3,
-    //   backgroundColor:"black"
-    // })
-    gsap.to(".topLine", {
-      width: 20,
-      opacity: 0,
-      x: 1500,
-      duration: 2,
+    const tl = gsap.timeline();
+    const mm = gsap.matchMedia();
+
+    mm.add("(min-width:1024px)", () => {
+      gsap.to(".topLine", {
+        width: 20,
+        opacity: 0,
+        x: 1500,
+        duration: 2,
+      });
+
+      gsap.fromTo(
+        ".bottomLine",
+        {
+          width: 20,
+          opacity: 1,
+          x: 1700,
+        },
+        {
+          opacity: 0,
+          x: 0,
+          duration: 2,
+        }
+      );
     });
 
-    gsap.fromTo(
-      ".bottomLine",
-      {
+    mm.add("(max-width:500px)",()=>{
+
+      gsap.to(".topLine", {
         width: 20,
-        opacity: 1,
-        x: 1700,
-      },
-      {
         opacity: 0,
-        x: 0,
+        x: 500,
         duration: 2,
-      }
-    );
+      });
+
+      gsap.fromTo(
+        ".bottomLine",
+        {
+          width: 20,
+          opacity: 1,
+          x: 500,
+        },
+        {
+          opacity: 0,
+          x: 0,
+          duration: 2,
+        }
+      );
+   
+
+
+    })
+
 
     tl.from(".title", {
       x: 3,
@@ -84,9 +104,11 @@ function Hero() {
     });
   });
 
+
+
   return (
     <>
-      <div className="hero lg:h-screen h-[70vh] w-full  md:ml-[20%] lg:mx-0">
+      <div className="hero lg:h-screen h-[100vh] w-full  md:ml-[20%] lg:mx-0">
         <div className="topLine w-7 bg-gray-50 rounded-full h-2 mb-[10%]">
           .
         </div>

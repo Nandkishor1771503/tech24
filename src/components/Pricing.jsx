@@ -37,7 +37,7 @@ function Pricing() {
         </p>
       </div> */}
 
-      <div className="priceCard flex  justify-center gap-10 h-[100vh] my-36 ">
+      <div className="priceCard lg:flex  justify-center gap-10 h-[100vh] my-36 ">
         <div className=" border border-gray-500 w-[30vw] h-screen rounded-2xl p-4 shadow-xl  shadow-gray-600">
           <h2 className=" text-orange-600 text-4xl text-center">Basic</h2>
           <div className="list of services ml-16 flex flex-col gap-2">

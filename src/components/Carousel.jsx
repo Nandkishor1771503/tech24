@@ -32,35 +32,35 @@ function Carousel() {
     const mm = gsap.matchMedia()
 
 
-    mm.add("(max-width:500px)", ()=> {
+    // mm.add("(max-width:500px)", ()=> {
 
-      ScrollTrigger.create({
-        trigger: ".pin",
-        pin: true, // Pin the entire ".pin" section
-        start: "top 300%",// Pin starts when ".pin" reaches the top of the viewport
-        end: "bottom 250%", // Adjust the scroll duration
-        scrub: 2,
-        markers: true, // For debugging purposes
-      });
+    //   ScrollTrigger.create({
+    //     trigger: ".pin",
+    //     pin: true, // Pin the entire ".pin" section
+    //     start: "top 300%",// Pin starts when ".pin" reaches the top of the viewport
+    //     end: "bottom 250%", // Adjust the scroll duration
+    //     scrub: 2,
+    //     markers: true, // For debugging purposes
+    //   });
   
-      // Animating individual images        ( Children Animation )
-      gsap.to(set, {
-        xPercent: -125 * set.length, // Move all images horizontally
-        scrollTrigger: {
-          trigger: ".container",
-          // scroller:"html",
-          start: "top 320%", // Trigger starts when the container reaches the viewport
-          end: "bottom 330%", // Ensure this matches the ScrollTrigger duration
-          scrub: 2,
-          markers:true,
-          // pin:true
-        },
-      });
+    //   // Animating individual images        ( Children Animation )
+    //   gsap.to(set, {
+    //     xPercent: -125 * set.length, // Move all images horizontally
+    //     scrollTrigger: {
+    //       trigger: ".container",
+    //       // scroller:"html",
+    //       start: "top 320%", // Trigger starts when the container reaches the viewport
+    //       end: "bottom 330%", // Ensure this matches the ScrollTrigger duration
+    //       scrub: 2,
+    //       markers:true,
+    //       // pin:true
+    //     },
+    //   });
 
 
-    })
+    // })
 
-    mm.add("(min-width:1024px)",()=>{
+    mm.add("(max-width:1500px)",()=>{
       // Pinning the container  ( Parent animation  )
     ScrollTrigger.create({
       trigger: ".pin",

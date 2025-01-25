@@ -6,29 +6,14 @@ import { IoCodeSlashOutline } from "react-icons/io5";
 import { useGSAP } from "@gsap/react";
 
 function About() {
-  useGSAP(() => {
-    gsap.from(".about", {
-      opacity: 0.7,
-      backgroundColor: "black",
-      scale: 0.7,
-      y: 50,
-      borderRadius: "100%",
-      scrollTrigger: {
-        trigger: ".about",
-        // markers:true,
-        start: "top bottom",
-        end: "bottom 70%",
-        scrub: true,
-      },
-    });
-  });
+  useGSAP(() => {});
   const Text = "sunnyNK".split("");
   return (
     <>
-      <div className="about lg:h-[80vh] w-full text-orange-500 bg-[#181818] text-start lg:p-7 rounded-xl -ml-6 lg:mx-2">
+      <div className="about lg:h-[80vh] w-full text-orange-500  text-start lg:p-7 rounded-xl ml-8 mt-[10%] lg:mx-2">
         <h1 className="my-8">About us</h1>
         <div className="flex md:flex-row  flex-col-reverse ">
-          <p className="lg:text-2xl text-2xl items-center justify-center lg:w-[60%] w-[120%] lg:leading-10 leading-[3rem] ">
+          <p className="lg:text-2xl text-2xl items-center justify-center lg:w-[60%] lg:leading-10 leading-[2.5rem] ">
             {" "}
             We’re a team of passionate designers, developers, and strategists
             committed to bringing your ideas to life. From sleek websites to
