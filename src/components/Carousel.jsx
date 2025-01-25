@@ -27,36 +27,61 @@ function Carousel() {
 
   useGSAP(() => {
     const set = gsap.utils.toArray(".container > .myImg");
+    const mm = gsap.matchMedia();
+    mm.add("(min-width:1024px)", () => {
+      // Pinning the container  ( Parent animation  )
+      ScrollTrigger.create({
+        trigger: ".pin",
+        pin: true, // Pin the entire ".pin" section
+        start: "top -3%", // Pin starts when ".pin" reaches the top of the viewport
+        end: "bottom -50%", // Adjust the scroll duration
+        scrub: 2,
+        // markers: true, // For debugging purposes
+      });
 
-
-    // Pinning the container  ( Parent animation  )
-    ScrollTrigger.create({
-      trigger: ".pin",
-      pin: true, // Pin the entire ".pin" section
-      start: "top -3%", // Pin starts when ".pin" reaches the top of the viewport
-      end: "bottom -50%", // Adjust the scroll duration
-      scrub: 2,
-      // markers: true, // For debugging purposes
+      // Animating individual images        ( Children Animation )
+      gsap.to(set, {
+        xPercent: -125 * set.length, // Move all images horizontally
+        scrollTrigger: {
+          trigger: ".pin",
+          start: "top top", // Trigger starts when the container reaches the viewport
+          end: "bottom -100%", // Ensure this matches the ScrollTrigger duration
+          scrub: 2,
+          // markers: true,
+          // pin:true
+        },
+      });
     });
 
-    // Animating individual images        ( Children Animation )
-    gsap.to(set, {
-      xPercent: -125 * set.length, // Move all images horizontally
-      scrollTrigger: {
+    mm.add("(max-width:500px)", () => {
+      ScrollTrigger.create({
         trigger: ".pin",
-        start: "top top", // Trigger starts when the container reaches the viewport
-        end: "bottom -100%", // Ensure this matches the ScrollTrigger duration
+        pin: true, // Pin the entire ".pin" section
+        start: "top 37%", // Pin starts when ".pin" reaches the top of the viewport
+        end: "bottom -40%", // Adjust the scroll duration
         scrub: 2,
-        markers: true,
-        // pin:true
-      },
+        // markers: true, // For debugging purposes
+      });
+
+      // Animating individual images        ( Children Animation )
+      gsap.to(set, {
+        xPercent: -125 * set.length, // Move all images horizontally
+        scrollTrigger: {
+          trigger: ".pin",
+          start: "top 50%", // Trigger starts when the container reaches the viewport
+          end: "bottom -100%", // Ensure this matches the ScrollTrigger duration
+          scrub: 2,
+          // markers: true,
+          // pin:true
+        },
+      });
     });
   });
 
   return (
     <>
       <h1 className="text-white ml-8 mt-5 font-thin font-londrina">Our work</h1>
-      <div className="pin w-full flex items-center justify-center lg:gap-0 p-0 overflow-x-hidden ">
+      <div className="pin w-full flex items-center justify-center lg:gap-0 p-0 overflow-x-hidden">
         <div
           ref={containerRef}
           onScroll={handleScroll}

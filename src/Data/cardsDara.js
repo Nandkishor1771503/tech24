@@ -15,7 +15,7 @@ const Data = [
         title: " Akhilesh ",
         para : "NKtechSolutions delivered exceptional mockups, design tutorials, and a custom-built site. Their fast response and professionalism made the experience truly outstanding! ",
         stars :4,
-        style:"bg-blue-500 top-10  mt-20 ml-7"
+        style:"bg-blue-500 top-10  mt-20 md:ml-7"
 
 
     },
@@ -24,7 +24,7 @@ const Data = [
         title: " THIRD ",
         para : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic maiores quibusdam ad commodi corrupti temporibus.",
         stars :4,
-        style:"bg-green-500 top-20 ml-14"
+        style:"bg-green-500 top-20 md:ml-14"
 
 
     },
@@ -33,7 +33,7 @@ const Data = [
         title: " FOURTH ",
         para : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic maiores quibusdam ad commodi corrupti temporibus.",
         stars :4,
-        style:"bg-orange-500 top-32 ml-20"
+        style:"bg-orange-500 top-32 md:ml-20"
 
 
     },

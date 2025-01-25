@@ -37,8 +37,8 @@ function Pricing() {
         </p>
       </div> */}
 
-      <div className="priceCard lg:flex  justify-center gap-10 lg:h-[100vh] lg:my-36 my-10">
-        <div className=" border border-gray-500 lg:w-[30vw] w-[90%] lg:h-screen h-[80vh] rounded-2xl p-4 ml-5 shadow-xl  shadow-gray-600">
+      <div className="priceCard flex justify-center lg:flex-row flex-col gap-10 lg:h-[100vh] lg:my-36 my-10">
+        <div className=" border border-gray-500 lg:w-[28vw] w-[90%] lg:h-screen h-[80vh] rounded-2xl p-4 ml-5 lg:ml-3 shadow-xl  shadow-gray-600">
           <h2 className=" text-orange-600 text-4xl  text-center">Basic</h2>
           <div className="list of services lg:ml-16 ml-5 flex flex-col gap-2">
             <span className="text-orange-500 lg:text-3xl text-2xl lg:mx-28 mx-24 lg:my-14 my-10 ">
@@ -62,7 +62,7 @@ function Pricing() {
           </div>
         </div>
 
-        <div className="priceCard border border-gray-500 lg:w-[30vw] w-[90%] h-screen rounded-2xl ml-5 my-14 z-50 p-4 shadow-xl shadow-gray-600">
+        <div className="priceCard border border-gray-500 lg:w-[30vw] w-[90%] h-screen rounded-2xl ml-5 z-50 p-4 shadow-xl shadow-gray-600">
           <h2 className=" text-orange-600 text-4xl text-center">Standard</h2>
           {/* <span className="text-orange-600">₹15,000</span> */}
           <div className="list of services lg:ml-16 ml-5 flex flex-col gap-0">

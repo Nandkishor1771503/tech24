@@ -11,7 +11,7 @@ function About() {
   return (
     <>
       <div className="about lg:h-[80vh] w-full text-orange-500  text-start lg:p-7 rounded-xl ml-8 lg:mt-[3%] mt-[10%] lg:mx-2">
-        <h1 className="my-8">About us</h1>
+        <h1 className="my-8 text-4xl">About us</h1>
         <div className="flex md:flex-row  flex-col-reverse ">
           <p className="lg:text-2xl text-xl items-center justify-center lg:w-[60%] w-[90%] lg:leading-10 leading-[2.5rem] ">
             {" "}
