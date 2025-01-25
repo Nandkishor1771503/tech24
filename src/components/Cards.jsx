@@ -21,7 +21,7 @@ function Cards() {
   useGSAP(() => {
     const set2 = gsap.utils.toArray(".card");
     const mm = gsap.matchMedia();
-    mm.add("(min-width:1024px)", () => {
+    // mm.add("(min-width:1024px)", () => {
       const tl2 = gsap.timeline({
         scrollTrigger: {
           trigger: ".parent",
@@ -47,46 +47,38 @@ function Cards() {
           "-=0.3"
         );
       });
+    // });
+    // mm.add("(max-width:500px)", () => {
 
-      
-    });
-    mm.add("(max-width:500px)", () => {
-      
-      const tl2 = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".parent",
-          scroller: "body",
-          // pin:true,
-          // markers: true,
-          start: "top 10%",
-          end: "bottom 80%",
-          scrub: 2,
-        },
-      });
-      set2.forEach((e) => {
-        tl2.to(
-          e,
-          {
-            y: 10,
-            opacity: 0.95,
-            // xPercent:2,
-            // marginTop:-10,
-            scale: 0.88,
-            stagger: 0.3,
-            // ease:"power3"
-          },
-          "-=0.3"
-        );
-      });
+    //   const tl2 = gsap.timeline({
+    //     scrollTrigger: {
+    //       trigger: ".parent",
+    //       scroller: "body",
+    //       // pin:true,
+    //       // markers: true,
+    //       start: "top 10%",
+    //       end: "bottom 80%",
+    //       scrub: 2,
+    //     },
+    //   });
+    //   set2.forEach((e) => {
+    //     tl2.to(
+    //       e,
+    //       {
+    //         y: 10,
+    //         opacity: 0.95,
+    //         // xPercent:2,
+    //         // marginTop:-10,
+    //         scale: 0.88,
+    //         stagger: 0.3,
+    //         // ease:"power3"
+    //       },
+    //       "-=0.3"
+    //     );
+    //   });
 
-      
-    });
+    // });
   });
-
-
-
-
-
 
   return (
     <>

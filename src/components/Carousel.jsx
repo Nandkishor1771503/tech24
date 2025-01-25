@@ -92,12 +92,7 @@ function Carousel() {
           <img src={Img2} alt="" className={imgStyle} />
           <img src={Img3} alt="" className={imgStyle} />
           <img src={Img4} alt="" className={imgStyle} />
-          <img
-            // src="https://images.wallpaperscraft.com/image/single/street_city_evening_black_white_lights_buildings_hdr_25485_1920x1080.jpg"
-            src={Img5}
-            alt=""
-            className={imgStyle}
-          />
+          <img src={Img5} alt="" className={imgStyle} />
         </div>
       </div>
     </>
