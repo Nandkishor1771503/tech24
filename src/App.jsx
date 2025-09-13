@@ -14,6 +14,7 @@ import Services from "./components/Services";
 import Gallery from "./components/Gallery";
 import Pricing from "./components/Pricing";
 import Footer from "./components/Footer";
+import LenisProvider from "./components/LenisProvider";
 gsap.registerPlugin(ScrollTrigger);
 
 const Text = "sunnyNK".split("");
@@ -326,6 +327,7 @@ function App() {
         <h1>HELLO</h1>
         </div>
         </div> */}
+      <LenisProvider>
 
       <Hero />
       <About />
@@ -336,6 +338,7 @@ function App() {
       <Gallery />
       <SVG />
       <Footer />
+      </LenisProvider>
     </>
   );
 }

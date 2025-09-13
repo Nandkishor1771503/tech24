@@ -49,7 +49,7 @@ function Pricing() {
           <h2 className=" text-orange-600 text-4xl  text-center">Basic</h2>
           <div className="list of services lg:ml-16 ml-5 flex flex-col gap-2">
             <span className="text-orange-500 lg:text-3xl text-2xl lg:mx-28 mx-24 lg:my-14 my-10 ">
-              ₹7,000
+              ₹5,000
             </span>
             {Basic.map((list, i) => {
               return (
@@ -74,7 +74,7 @@ function Pricing() {
           
           <div className="list of services lg:ml-16 ml-5 flex flex-col gap-0">
             <span className="text-orange-500 text-3xl lg:mx-28 mx-20 lg:my-14 my-10 ">
-              ₹15,000
+              ₹10,000
             </span>
             {Standard.map((list, i) => {
               return (
@@ -100,7 +100,7 @@ function Pricing() {
 
           <div className="list of services lg:ml-16 ml-5 flex flex-col gap-0">
             <span className="text-orange-500 text-3xl lg:mx-28 mx-20 lg:my-14 my-10 ">
-              ₹21,000
+              ₹15,000
             </span>
             {Premium.map((list, i) => {
               return (

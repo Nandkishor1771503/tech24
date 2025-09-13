@@ -1,7 +1,7 @@
 
 
 export const Basic = [
-    // { price: "₹7,000" },
+    // { price: "₹5,000" },
     "1-5 pages",
     "Landing page layout",
     "Personal design selection",
@@ -14,7 +14,7 @@ export const Basic = [
 
 
 export const Standard = [
-    // { price: "₹15,000" },
+    // { price: "₹10,000" },
     "5-7 pages",
     "multi pages layout",
     "custom design ",
@@ -30,7 +30,7 @@ export const Standard = [
 
 
 export const Premium = [
-    // { price: "₹21,000" },    
+    // { price: "₹15,000" },    
     "Required pages",
     "UI/UX",
     "complete custom design ",
@@ -39,8 +39,7 @@ export const Premium = [
     "site maintenance",
     "optimizing code regularly",
     "site support",
-    "call support ",
-    "CMS",
+    "call support "
     
 
 ]
