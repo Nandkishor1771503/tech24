@@ -43,7 +43,6 @@ function Pricing() {
 
   return (
     <>
-      
       <div className="priceCard flex justify-center lg:flex-row flex-col gap-10 lg:h-[100vh] lg:my-36 my-16">
         <div className=" border border-gray-500 lg:w-[28vw] w-[90%] lg:h-screen h-[80vh] rounded-2xl p-4 ml-5 lg:ml-3 shadow-xl  shadow-gray-600">
           <h2 className=" text-orange-600 text-4xl  text-center">Basic</h2>
@@ -71,7 +70,7 @@ function Pricing() {
 
         <div className="priceCard border border-gray-500 lg:w-[30vw] w-[90%] lg:h-screen rounded-2xl ml-5 z-50 p-4 shadow-xl shadow-gray-600">
           <h2 className=" text-orange-600 text-4xl text-center">Standard</h2>
-          
+
           <div className="list of services lg:ml-16 ml-5 flex flex-col gap-0">
             <span className="text-orange-500 text-3xl lg:mx-28 mx-20 lg:my-14 my-10 ">
               ₹10,000
@@ -96,7 +95,6 @@ function Pricing() {
 
         <div className="priceCard border border-gray-500 lg:w-[30vw] w-[90%] lg:h-screen rounded-2xl ml-5 p-4 shadow-xl shadow-gray-600">
           <h2 className=" text-orange-600 text-4xl text-center">Premium</h2>
-          
 
           <div className="list of services lg:ml-16 ml-5 flex flex-col gap-0">
             <span className="text-orange-500 text-3xl lg:mx-28 mx-20 lg:my-14 my-10 ">
