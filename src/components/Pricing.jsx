@@ -18,7 +18,7 @@ function Pricing() {
         scrollTrigger: {
           trigger: ".priceCard",
           // markers:true,
-          start: "top 40%",
+          start: "top 48%",
           end: "bottom 98%",
           scrub: 2,
         },
