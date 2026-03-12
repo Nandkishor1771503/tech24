@@ -21,9 +21,9 @@ function Footer() {
             <p className="mb-1">📧</p>
             <a
               className="hover:text-gray-300 transition break-words"
-              href="mailto:andekarsunny2004@gmail.com"
+              href="mailto:nktechsolutions824@gmail.com"
             >
-              andekarsunny2004@gmail.com
+              nktechsolutions824@gmail.com
             </a>
           </div>
 
