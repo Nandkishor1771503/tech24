@@ -32,7 +32,6 @@ function Pricing() {
         stagger: 0.1,
         scrollTrigger: {
           trigger: ".priceCard",
-          markers: true,
           start: "top 130%",
           end: "bottom 110%",
           scrub: 2,
